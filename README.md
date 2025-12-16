@@ -77,6 +77,20 @@ Settings/Preferences → Tools → T-Ruby
 ./gradlew test
 ```
 
+## Development
+
+### Quick Iteration (Hot Reload)
+
+For rapid development with automatic rebuilds:
+
+```bash
+./scripts/dev.sh
+```
+
+This starts the IDE and watches for file changes. When you save a file, the plugin rebuilds automatically and reloads in the running IDE.
+
+**Requirements**: `fswatch` (`brew install fswatch`)
+
 ## Related
 
 - [T-Ruby Compiler](https://github.com/type-ruby/t-ruby) - The main T-Ruby compiler

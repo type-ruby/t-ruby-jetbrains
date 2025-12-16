@@ -7,6 +7,12 @@ plugins {
 group = "io.truby"
 version = "0.2.1"
 
+// IDE 타입 설정 (IC=IntelliJ, RM=RubyMine, WS=WebStorm, PC=PyCharm, GO=GoLand)
+val platformType: String by project.extra {
+    findProperty("platformType")?.toString() ?: "IC"
+}
+val platformVersion = "2024.2"
+
 repositories {
     mavenCentral()
     intellijPlatform {
@@ -16,7 +22,14 @@ repositories {
 
 dependencies {
     intellijPlatform {
-        intellijIdeaCommunity("2024.2")
+        // IDE 타입에 따라 다른 IDE 사용
+        when (platformType) {
+            "RM" -> rubymine(platformVersion)
+            "WS" -> webstorm(platformVersion)
+            "PC" -> pycharmCommunity(platformVersion)
+            "GO" -> goland(platformVersion)
+            else -> intellijIdeaCommunity(platformVersion)
+        }
         plugin("com.redhat.devtools.lsp4ij:0.19.0")
         bundledPlugin("org.jetbrains.plugins.textmate")
         pluginVerifier()
