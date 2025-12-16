@@ -1,0 +1,18 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IDE
+.idea/
+*.iml
+
+# IntelliJ Platform
+.intellijPlatform/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets (signing keys, tokens)
+.secrets/
