@@ -1,0 +1,23 @@
+{
+  "name": "t-ruby",
+  "displayName": "T-Ruby",
+  "description": "T-Ruby language support",
+  "version": "0.2.1",
+  "contributes": {
+    "languages": [
+      {
+        "id": "t-ruby",
+        "aliases": ["T-Ruby", "t-ruby", "trb"],
+        "extensions": [".trb", ".d.trb"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "t-ruby",
+        "scopeName": "source.t-ruby",
+        "path": "./syntaxes/t-ruby.tmLanguage.json"
+      }
+    ]
+  }
+}

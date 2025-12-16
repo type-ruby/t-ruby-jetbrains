@@ -8,9 +8,13 @@ import javax.swing.Icon
  *
  * Declaration files contain only type signatures without implementation,
  * similar to TypeScript's .d.ts files.
+ * Note: Syntax highlighting is handled by TextMate bundle via editorHighlighterProvider.
  */
-object TRubyDeclarationFileType : LanguageFileType(TRubyLanguage) {
-    private fun readResolve(): Any = TRubyDeclarationFileType
+class TRubyDeclarationFileType private constructor() : LanguageFileType(TRubyLanguage) {
+    companion object {
+        @JvmStatic
+        val INSTANCE = TRubyDeclarationFileType()
+    }
 
     override fun getName(): String = "T-Ruby Declaration"
 

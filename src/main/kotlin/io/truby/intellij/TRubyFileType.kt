@@ -5,9 +5,13 @@ import javax.swing.Icon
 
 /**
  * File type for T-Ruby source files (.trb).
+ * Note: Syntax highlighting is handled by TextMate bundle via editorHighlighterProvider.
  */
-object TRubyFileType : LanguageFileType(TRubyLanguage) {
-    private fun readResolve(): Any = TRubyFileType
+class TRubyFileType private constructor() : LanguageFileType(TRubyLanguage) {
+    companion object {
+        @JvmStatic
+        val INSTANCE = TRubyFileType()
+    }
 
     override fun getName(): String = "T-Ruby"
 
