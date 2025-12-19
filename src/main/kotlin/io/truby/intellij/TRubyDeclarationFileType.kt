@@ -20,6 +20,8 @@ class TRubyDeclarationFileType private constructor() : LanguageFileType(TRubyLan
 
     override fun getDescription(): String = "T-Ruby declaration file"
 
+    override fun getDisplayName(): String = "T-Ruby Declaration"
+
     override fun getDefaultExtension(): String = "d.trb"
 
     override fun getIcon(): Icon = TRubyIcons.DECLARATION_FILE

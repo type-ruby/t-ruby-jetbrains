@@ -17,6 +17,8 @@ class TRubyFileType private constructor() : LanguageFileType(TRubyLanguage) {
 
     override fun getDescription(): String = "T-Ruby source file"
 
+    override fun getDisplayName(): String = "T-Ruby Source"
+
     override fun getDefaultExtension(): String = "trb"
 
     override fun getIcon(): Icon = TRubyIcons.FILE
