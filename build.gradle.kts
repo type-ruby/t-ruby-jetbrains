@@ -121,6 +121,10 @@ kotlin {
 }
 
 tasks {
+    runIde {
+        autoReload.set(true)
+    }
+
     buildSearchableOptions {
         enabled = false
     }
