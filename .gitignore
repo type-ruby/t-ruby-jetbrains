@@ -16,3 +16,5 @@ Thumbs.db
 
 # Secrets (signing keys, tokens)
 .secrets/
+
+ignore/
