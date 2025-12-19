@@ -1,0 +1,122 @@
+{
+  "name": "T-Ruby Darcula",
+  "type": "dark",
+  "tokenColors": [
+    {
+      "scope": [
+        "keyword",
+        "keyword.control",
+        "keyword.control.class",
+        "keyword.control.module",
+        "keyword.control.def",
+        "keyword.other.special-method",
+        "constant.language",
+        "constant.language.nil",
+        "constant.language.boolean",
+        "variable.language.self",
+        "storage",
+        "storage.type"
+      ],
+      "settings": {
+        "foreground": "#CC7832",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.type",
+        "entity.name.type.class",
+        "entity.name.type.module",
+        "entity.name.function",
+        "entity.other.inherited-class",
+        "support.class",
+        "support.function"
+      ],
+      "settings": {
+        "foreground": "#FFC66D"
+      }
+    },
+    {
+      "scope": [
+        "string",
+        "string.quoted",
+        "string.quoted.double",
+        "string.quoted.single",
+        "string.quoted.double.interpolated",
+        "string.regexp"
+      ],
+      "settings": {
+        "foreground": "#6A8759"
+      }
+    },
+    {
+      "scope": [
+        "variable.other.readwrite.instance",
+        "variable.other.readwrite.class",
+        "variable.other.readwrite.global",
+        "variable.other.constant"
+      ],
+      "settings": {
+        "foreground": "#9876AA"
+      }
+    },
+    {
+      "scope": [
+        "comment",
+        "comment.line",
+        "comment.block"
+      ],
+      "settings": {
+        "foreground": "#808080",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "constant.numeric",
+        "constant.numeric.integer",
+        "constant.numeric.float"
+      ],
+      "settings": {
+        "foreground": "#6897BB"
+      }
+    },
+    {
+      "scope": [
+        "constant.language.symbol",
+        "constant.other.symbol"
+      ],
+      "settings": {
+        "foreground": "#A5C261"
+      }
+    },
+    {
+      "scope": [
+        "variable",
+        "meta.class",
+        "meta.module",
+        "punctuation",
+        "source"
+      ],
+      "settings": {
+        "foreground": "#A9B7C6"
+      }
+    },
+    {
+      "scope": [
+        "meta.embedded.line",
+        "punctuation.section.embedded"
+      ],
+      "settings": {
+        "foreground": "#CC7832"
+      }
+    },
+    {
+      "scope": "invalid.deprecated",
+      "settings": {
+        "foreground": "#FF6B68",
+        "fontStyle": "strikethrough"
+      }
+    }
+  ]
+}

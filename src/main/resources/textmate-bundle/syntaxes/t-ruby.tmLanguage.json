@@ -7,7 +7,6 @@
     { "include": "#comments" },
     { "include": "#type-alias" },
     { "include": "#interface" },
-    { "include": "#class-definition" },
     { "include": "#function-definition" },
     { "include": "#function-definition-no-params" },
     { "include": "#method-call" },
@@ -64,28 +63,6 @@
             { "include": "#interface-member" },
             { "include": "#comments" }
           ]
-        }
-      ]
-    },
-    "class-definition": {
-      "patterns": [
-        {
-          "name": "meta.class.t-ruby",
-          "match": "^\\s*(class)\\s+([A-Z]\\w*)(?:\\s*(<)\\s*([A-Z]\\w*))?",
-          "captures": {
-            "1": { "name": "keyword.declaration.class.t-ruby" },
-            "2": { "name": "entity.name.type.class.t-ruby" },
-            "3": { "name": "punctuation.definition.inheritance.t-ruby" },
-            "4": { "name": "entity.other.inherited-class.t-ruby" }
-          }
-        },
-        {
-          "name": "meta.module.t-ruby",
-          "match": "^\\s*(module)\\s+([A-Z]\\w*)",
-          "captures": {
-            "1": { "name": "keyword.declaration.module.t-ruby" },
-            "2": { "name": "entity.name.type.module.t-ruby" }
-          }
         }
       ]
     },
