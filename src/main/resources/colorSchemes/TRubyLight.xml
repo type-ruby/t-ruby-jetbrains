@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <!-- Keywords - Dark blue/navy -->
+    <option name="TEXTMATE.keyword">
+        <value>
+            <option name="FOREGROUND" value="000080"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.keyword.control">
+        <value>
+            <option name="FOREGROUND" value="000080"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.keyword.control.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="000080"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.keyword.control.class.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="000080"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.keyword.control.def.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="000080"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.keyword.other.special-method.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="000080"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <!-- Class/Type names -->
+    <option name="TEXTMATE.entity.name.type">
+        <value>
+            <option name="FOREGROUND" value="000000"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.entity.name.type.class.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="000000"/>
+        </value>
+    </option>
+
+    <!-- Function names -->
+    <option name="TEXTMATE.entity.name.function">
+        <value>
+            <option name="FOREGROUND" value="7A7A43"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.entity.name.function.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="7A7A43"/>
+        </value>
+    </option>
+
+    <!-- Strings - Dark green -->
+    <option name="TEXTMATE.string">
+        <value>
+            <option name="FOREGROUND" value="008000"/>
+        </value>
+    </option>
+    <option name="TEXTMATE.string.quoted.double.interpolated.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="008000"/>
+        </value>
+    </option>
+
+    <!-- Instance variables - Purple -->
+    <option name="TEXTMATE.variable.other.readwrite.instance.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="660E7A"/>
+        </value>
+    </option>
+
+    <!-- Constants -->
+    <option name="TEXTMATE.variable.other.constant.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="660E7A"/>
+            <option name="FONT_TYPE" value="2"/>
+        </value>
+    </option>
+
+    <!-- Comments - Gray -->
+    <option name="TEXTMATE.comment">
+        <value>
+            <option name="FOREGROUND" value="808080"/>
+            <option name="FONT_TYPE" value="2"/>
+        </value>
+    </option>
+
+    <!-- Numbers - Blue -->
+    <option name="TEXTMATE.constant.numeric">
+        <value>
+            <option name="FOREGROUND" value="0000FF"/>
+        </value>
+    </option>
+
+    <!-- Boolean/nil -->
+    <option name="TEXTMATE.constant.language">
+        <value>
+            <option name="FOREGROUND" value="000080"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+</list>

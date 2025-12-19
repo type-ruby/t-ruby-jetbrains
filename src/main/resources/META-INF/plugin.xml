@@ -69,6 +69,13 @@
         <applicationService
                 serviceImplementation="io.truby.intellij.settings.TRubySettings"/>
 
+        <!-- Additional Text Attributes for T-Ruby syntax highlighting -->
+        <additionalTextAttributes scheme="Darcula" file="/colorSchemes/TRubyDarcula.xml"/>
+        <additionalTextAttributes scheme="Dark" file="/colorSchemes/TRubyDarcula.xml"/>
+        <additionalTextAttributes scheme="Default" file="/colorSchemes/TRubyLight.xml"/>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.intellij">
         <!-- TextMate Bundle Provider for Syntax Highlighting -->
         <textmate.bundleProvider implementation="io.truby.intellij.TRubyTextMateBundleProvider"/>
     </extensions>

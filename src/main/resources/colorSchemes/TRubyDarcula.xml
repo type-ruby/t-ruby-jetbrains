@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <!--
+        T-Ruby TextMate Color Scheme for Darcula/Dark themes
+        Maps TextMate scopes to IntelliJ color attributes
+        Format: TEXTMATE.<full-scope-name>
+    -->
+
+    <!-- ==================== KEYWORDS ==================== -->
+    <!-- Orange CC7832, Bold -->
+
+    <!-- Generic keyword scopes -->
+    <option name="TEXTMATE.keyword">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.keyword.control">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.storage">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.storage.type">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <!-- ==================== ENTITIES ==================== -->
+    <!-- Yellow FFC66D -->
+
+    <option name="TEXTMATE.entity.name">
+        <value>
+            <option name="FOREGROUND" value="FFC66D"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.entity.name.type">
+        <value>
+            <option name="FOREGROUND" value="FFC66D"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.entity.name.function">
+        <value>
+            <option name="FOREGROUND" value="FFC66D"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.entity.name.function.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="FFC66D"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.entity.other.inherited-class">
+        <value>
+            <option name="FOREGROUND" value="FFC66D"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.support.class">
+        <value>
+            <option name="FOREGROUND" value="FFC66D"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.support.function">
+        <value>
+            <option name="FOREGROUND" value="FFC66D"/>
+        </value>
+    </option>
+
+    <!-- ==================== STRINGS ==================== -->
+    <!-- Green 6A8759 -->
+
+    <option name="TEXTMATE.string">
+        <value>
+            <option name="FOREGROUND" value="6A8759"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.string.quoted">
+        <value>
+            <option name="FOREGROUND" value="6A8759"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.string.regexp">
+        <value>
+            <option name="FOREGROUND" value="6A8759"/>
+        </value>
+    </option>
+
+    <!-- ==================== VARIABLES ==================== -->
+    <!-- Purple 9876AA for instance/class/global -->
+
+    <option name="TEXTMATE.variable.other.readwrite.instance">
+        <value>
+            <option name="FOREGROUND" value="9876AA"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.variable.other.readwrite.class">
+        <value>
+            <option name="FOREGROUND" value="9876AA"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.variable.other.readwrite.global">
+        <value>
+            <option name="FOREGROUND" value="9876AA"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.variable.other.constant">
+        <value>
+            <option name="FOREGROUND" value="9876AA"/>
+        </value>
+    </option>
+
+    <!-- Default text color for local variables -->
+    <option name="TEXTMATE.variable">
+        <value>
+            <option name="FOREGROUND" value="A9B7C6"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.variable.parameter">
+        <value>
+            <option name="FOREGROUND" value="A9B7C6"/>
+        </value>
+    </option>
+
+    <!-- ==================== COMMENTS ==================== -->
+    <!-- Gray 808080, Italic -->
+
+    <option name="TEXTMATE.comment">
+        <value>
+            <option name="FOREGROUND" value="808080"/>
+            <option name="FONT_TYPE" value="2"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.comment.line">
+        <value>
+            <option name="FOREGROUND" value="808080"/>
+            <option name="FONT_TYPE" value="2"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.comment.block">
+        <value>
+            <option name="FOREGROUND" value="808080"/>
+            <option name="FONT_TYPE" value="2"/>
+        </value>
+    </option>
+
+    <!-- ==================== CONSTANTS ==================== -->
+
+    <!-- Numbers - Blue 6897BB -->
+    <option name="TEXTMATE.constant.numeric">
+        <value>
+            <option name="FOREGROUND" value="6897BB"/>
+        </value>
+    </option>
+
+    <!-- Symbols - Light green A5C261 -->
+    <option name="TEXTMATE.constant.language.symbol">
+        <value>
+            <option name="FOREGROUND" value="A5C261"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.constant.other.symbol">
+        <value>
+            <option name="FOREGROUND" value="A5C261"/>
+        </value>
+    </option>
+
+    <!-- Language constants (nil, true, false) - Orange bold CC7832 -->
+    <option name="TEXTMATE.constant.language">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <!-- self - Orange bold CC7832 -->
+    <option name="TEXTMATE.variable.language">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.variable.language.self">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+            <option name="FONT_TYPE" value="1"/>
+        </value>
+    </option>
+
+    <!-- ==================== PUNCTUATION ==================== -->
+    <!-- Default text color A9B7C6 -->
+
+    <option name="TEXTMATE.punctuation">
+        <value>
+            <option name="FOREGROUND" value="A9B7C6"/>
+        </value>
+    </option>
+
+    <!-- Interpolation punctuation - Orange CC7832 -->
+    <option name="TEXTMATE.punctuation.section.embedded">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+        </value>
+    </option>
+
+    <!-- ==================== META ==================== -->
+
+    <option name="TEXTMATE.meta.embedded">
+        <value>
+            <option name="FOREGROUND" value="CC7832"/>
+        </value>
+    </option>
+
+    <!-- ==================== SOURCE ==================== -->
+    <!-- Default source color -->
+
+    <option name="TEXTMATE.source">
+        <value>
+            <option name="FOREGROUND" value="A9B7C6"/>
+        </value>
+    </option>
+
+    <option name="TEXTMATE.source.t-ruby">
+        <value>
+            <option name="FOREGROUND" value="A9B7C6"/>
+        </value>
+    </option>
+</list>
