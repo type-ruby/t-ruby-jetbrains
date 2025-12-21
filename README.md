@@ -1,11 +1,29 @@
-# T-Ruby for JetBrains IDEs
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/248530250" alt="T-Ruby" height="120">
+</p>
 
-[![JetBrains Plugin](https://img.shields.io/jetbrains/plugin/v/29335-t-ruby?label=JetBrains%20Marketplace)](https://plugins.jetbrains.com/plugin/29335-t-ruby)
-[![JetBrains Downloads](https://img.shields.io/jetbrains/plugin/d/29335-t-ruby)](https://plugins.jetbrains.com/plugin/29335-t-ruby)
-[![T-Ruby Compiler](https://img.shields.io/gem/v/t-ruby?label=T-Ruby%20Compiler)](https://rubygems.org/gems/t-ruby)
-[![License](https://img.shields.io/github/license/type-ruby/t-ruby-jetbrains)](LICENSE)
+<h1 align="center">T-Ruby for JetBrains IDEs</h1>
+
+<p align="center">
+  <a href="https://type-ruby.github.io">Official Website</a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://github.com/type-ruby/t-ruby">GitHub</a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://plugins.jetbrains.com/plugin/29335-t-ruby">JetBrains Marketplace</a>
+</p>
+
+<p align="center">
+  <a href="https://plugins.jetbrains.com/plugin/29335-t-ruby"><img src="https://img.shields.io/jetbrains/plugin/v/29335-t-ruby?label=JetBrains%20Marketplace" alt="JetBrains Plugin"></a>
+  <a href="https://plugins.jetbrains.com/plugin/29335-t-ruby"><img src="https://img.shields.io/jetbrains/plugin/d/29335-t-ruby" alt="JetBrains Downloads"></a>
+  <a href="https://rubygems.org/gems/t-ruby"><img src="https://img.shields.io/gem/v/t-ruby?label=T-Ruby%20Compiler" alt="T-Ruby Compiler"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/type-ruby/t-ruby-jetbrains" alt="License"></a>
+</p>
+
+---
 
 T-Ruby language support for JetBrains IDEs. Provides syntax highlighting, LSP-based code intelligence, and development tools for [T-Ruby](https://github.com/type-ruby/t-ruby) - a TypeScript-style static type system for Ruby.
+
+> **Note**: This plugin works with all JetBrains IDEs including IntelliJ IDEA, RubyMine, WebStorm, and more.
 
 ## Supported IDEs
 
@@ -90,6 +108,53 @@ For rapid development with automatic rebuilds:
 This starts the IDE and watches for file changes. When you save a file, the plugin rebuilds automatically and reloads in the running IDE.
 
 **Requirements**: `fswatch` (`brew install fswatch`)
+
+## Quick Start Example
+
+1. Create a new file `hello.trb`:
+
+```trb
+type UserId = String
+
+interface User
+  id: UserId
+  name: String
+  age: Integer
+end
+
+def greet(user: User): String
+  "Hello, #{user.name}!"
+end
+```
+
+2. Save the file - you'll see syntax highlighting and real-time diagnostics
+
+3. Hover over types to see their definitions
+
+4. Use `Ctrl+Space` for autocomplete suggestions
+
+## Troubleshooting
+
+### Plugin not working
+
+1. Check if `trc` is installed: `which trc`
+2. Verify the path in settings: `Settings` > `Tools` > `T-Ruby`
+3. Check IDE logs: `Help` > `Show Log in Finder/Explorer`
+
+### No syntax highlighting
+
+1. Ensure file has `.trb` or `.d.trb` extension
+2. Check file type association: `Settings` > `Editor` > `File Types`
+
+### Performance issues
+
+- Disable diagnostics for large files
+- Restart the IDE
+
+## Contributing
+
+Issues and pull requests are welcome!
+https://github.com/type-ruby/t-ruby-jetbrains/issues
 
 ## Related
 
