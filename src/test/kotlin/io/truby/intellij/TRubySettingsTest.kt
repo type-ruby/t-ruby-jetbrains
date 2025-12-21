@@ -10,27 +10,27 @@ import org.junit.jupiter.api.Assertions.*
 class TRubySettingsTest : BasePlatformTestCase() {
 
     fun testDefaultSettings() {
-        val settings = TRubySettings.getInstance()
+        val settings = TRubySettings.instance
         assertNotNull(settings)
 
         // Check default values
-        assertEquals("trc", settings.state.compilerPath)
-        assertTrue(settings.state.enableLsp)
+        assertEquals("trc", settings.trcPath)
+        assertTrue(settings.enableLsp)
     }
 
     fun testSettingsPersistence() {
-        val settings = TRubySettings.getInstance()
+        val settings = TRubySettings.instance
 
         // Modify settings
-        settings.state.compilerPath = "/custom/path/trc"
-        settings.state.enableLsp = false
+        settings.trcPath = "/custom/path/trc"
+        settings.enableLsp = false
 
         // Verify changes
-        assertEquals("/custom/path/trc", settings.state.compilerPath)
-        assertFalse(settings.state.enableLsp)
+        assertEquals("/custom/path/trc", settings.trcPath)
+        assertFalse(settings.enableLsp)
 
         // Reset to defaults for other tests
-        settings.state.compilerPath = "trc"
-        settings.state.enableLsp = true
+        settings.trcPath = "trc"
+        settings.enableLsp = true
     }
 }

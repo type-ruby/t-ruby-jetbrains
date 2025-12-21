@@ -25,7 +25,7 @@ class TRubyFileTypeTest : BasePlatformTestCase() {
     }
 
     fun testTRubyLanguageRegistered() {
-        val language = TRubyLanguage.INSTANCE
+        val language = TRubyLanguage
         assertNotNull(language)
         assertEquals("T-Ruby", language.id)
     }
