@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "io.truby"
-version = "0.2.3"
+version = "0.2.4"
 
 // IDE 타입 설정 (IC=IntelliJ, RM=RubyMine, WS=WebStorm, PC=PyCharm, GO=GoLand)
 val platformType: String by project.extra {
