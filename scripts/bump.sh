@@ -3,12 +3,13 @@
 # Version Bump and Release Script for T-Ruby JetBrains Plugin
 #
 # Usage:
-#   ./scripts/bump.sh <type>
+#   ./scripts/bump.sh <type|version>
 #
 # Arguments:
 #   patch       Bump patch version (0.1.0 -> 0.1.1)
 #   minor       Bump minor version (0.1.0 -> 0.2.0)
 #   major       Bump major version (0.1.0 -> 1.0.0)
+#   X.Y.Z       Set exact version (e.g., 0.2.2)
 #
 # Options:
 #   --dry-run   Show what would happen without making changes
@@ -17,6 +18,7 @@
 # Examples:
 #   ./scripts/bump.sh patch
 #   ./scripts/bump.sh minor --dry-run
+#   ./scripts/bump.sh 0.2.2
 
 set -e
 
@@ -32,6 +34,7 @@ NC='\033[0m' # No Color
 
 DRY_RUN=false
 BUMP_TYPE=""
+EXACT_VERSION=""
 
 print_help() {
     echo "Version Bump and Release Script for T-Ruby JetBrains Plugin"
@@ -42,6 +45,7 @@ print_help() {
     echo "  patch       Bump patch version (0.1.0 -> 0.1.1)"
     echo "  minor       Bump minor version (0.1.0 -> 0.2.0)"
     echo "  major       Bump major version (0.1.0 -> 1.0.0)"
+    echo "  X.Y.Z       Set exact version (e.g., 0.2.2)"
     echo ""
     echo "Options:"
     echo "  --dry-run   Show what would happen without making changes"
@@ -117,15 +121,21 @@ while [[ $# -gt 0 ]]; do
             exit 0
             ;;
         *)
-            log_error "Unknown option: $1"
-            print_help
-            exit 1
+            # Check if it's a version number (X.Y.Z format)
+            if [[ $1 =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+                EXACT_VERSION="$1"
+                shift
+            else
+                log_error "Unknown option: $1"
+                print_help
+                exit 1
+            fi
             ;;
     esac
 done
 
-if [ -z "$BUMP_TYPE" ]; then
-    log_error "Missing bump type (patch|minor|major)"
+if [ -z "$BUMP_TYPE" ] && [ -z "$EXACT_VERSION" ]; then
+    log_error "Missing bump type (patch|minor|major) or version (X.Y.Z)"
     print_help
     exit 1
 fi
@@ -140,7 +150,11 @@ fi
 
 # Calculate versions
 OLD_VERSION=$(get_version)
-NEW_VERSION=$(bump_version "$BUMP_TYPE")
+if [ -n "$EXACT_VERSION" ]; then
+    NEW_VERSION="$EXACT_VERSION"
+else
+    NEW_VERSION=$(bump_version "$BUMP_TYPE")
+fi
 
 log_info "Version bump: $OLD_VERSION -> $NEW_VERSION"
 
