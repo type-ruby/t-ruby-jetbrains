@@ -69,6 +69,14 @@
         <applicationService
                 serviceImplementation="io.truby.intellij.settings.TRubySettings"/>
 
+        <!-- Output Directory Watcher Service (auto-refresh VFS on trc -w changes) -->
+        <projectService
+                serviceImplementation="io.truby.intellij.watcher.OutputDirectoryWatcher"/>
+
+        <!-- Start watcher when T-Ruby project opens -->
+        <postStartupActivity
+                implementation="io.truby.intellij.watcher.TRubyProjectStartupActivity"/>
+
         <!-- Additional Text Attributes for T-Ruby syntax highlighting -->
         <additionalTextAttributes scheme="Darcula" file="/colorSchemes/TRubyDarcula.xml"/>
         <additionalTextAttributes scheme="Dark" file="/colorSchemes/TRubyDarcula.xml"/>
